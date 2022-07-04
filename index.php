@@ -4,6 +4,8 @@ require 'core/bootstrap.php';
 $routes = [
 	'/hallo/welt' => 'WelcomeController@index',
 	'/spam' => 'SpamController@spam',
+	'/beer' => 'BeerController@beer',
+
 ];
 
 $db = [
