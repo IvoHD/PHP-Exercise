@@ -19,6 +19,6 @@ class WelcomeController
 		// Umleiten auf die Startseite
 		header('Location: ' . ROOT_URL . '/hallo/welt');
 	}
-	
 }
 
+?>
