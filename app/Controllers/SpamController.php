@@ -2,7 +2,7 @@
 
 class SpamController
 {
-	public function index()
+	public function spam()
 	{	
 		require 'app/Views/spam.view.php';
 
@@ -22,12 +22,7 @@ class SpamController
                 echo "SPAM <br>";
                 
         }
-        // ValidateSpam();
 	}
-	
-    public function ValidateSpam(){
-       
-    }
 }
 
 ?>
