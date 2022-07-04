@@ -5,6 +5,7 @@ $routes = [
 	'/hallo/welt' => 'WelcomeController@index',
 	'/spam' => 'SpamController@spam',
 	'/beer' => 'BeerController@beer',
+	'/pixel' => 'PixelController@pixel',
 
 ];
 
