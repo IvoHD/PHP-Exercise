@@ -12,7 +12,10 @@ class PixelController {
             for($i = 0; $i < $cols; $i++){
                 echo "<tr>";
                     for($j = 0; $j < $rows; $j++)
-                        echo "<td id= {$i}{$j}> </td>";
+                        if(in_array($i + 1 . "|" . $j + 1, $array))
+                            echo "<td id=\"{$i}{$j}\" class=\"mark\"> </td>";
+                        else
+                            echo "<td id=\"{$i}{$j}\"> </td>";
                 echo "</tr>";
             }
     
