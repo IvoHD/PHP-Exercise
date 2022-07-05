@@ -7,6 +7,9 @@ $routes = [
 	'/beer' => 'BeerController@beer',
 	'/pixel' => 'PixelController@pixel',
 
+	//form
+	'/form' => "FormController@form",
+	'/validate' => "FormController@validate",
 ];
 
 $db = [

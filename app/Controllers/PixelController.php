@@ -4,9 +4,9 @@ class PixelController {
     public function pixel () {
         require 'app/Views/pixel.view.php';
 
-        $cols = $_GET['cols'];
-        $rows = $_GET['rows'];
-        $array =  $_GET['pixels'];
+        $cols = $_GET['cols'] ?? 4;
+        $rows = $_GET['rows'] ?? 4;
+        $array =  $_GET['pixels'] ?? [];
         if($this->ValidateParameter($cols, $rows)){
             echo "<table>";
             for($i = 0; $i < $cols; $i++){
@@ -41,12 +41,11 @@ class PixelController {
 
     function Mark($array) {
         $dom = new DOMDocument;
-        $dom->LoadHTMLFile('app/Views/pixel.view.php')
+        $dom->LoadHTMLFile('app/Views/pixel.view.php');
 
-        foreach($array as $id){
-            $cell = $dom->getElementByID("{$id[0]}{$id[2]}")
-
-        }
+        // foreach($array as $id){
+        //     $cell = $dom->getElementByID("{$id[0]}{$id[2]}")
+        // }
     }
 }
 
